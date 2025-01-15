@@ -4,7 +4,7 @@ import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.comments.model.Author;
-import com.comments.repository.UserRepository;
+import com.comments.repository.AuthorRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -14,7 +14,7 @@ import org.mockito.MockitoAnnotations;
 public class AuthorServiceTest {
 
     @Mock
-    private UserRepository userRepository;
+    private AuthorRepository userRepository;
 
     @InjectMocks
     private AuthorService authorService;
